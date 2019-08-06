@@ -6,3 +6,22 @@
 # maps: {sex: man,height: 180}
 # lists: [13,13,13,13]
 # dog: {name: 小狗,age: 2}
+server:
+  port: 8080
+spring:
+  profiles:
+    active: prod
+
+---
+
+server:
+  port: 8082
+spring:
+  profiles: dev
+
+---
+server:
+  port: 8083
+
+spring:
+  profiles: prod
